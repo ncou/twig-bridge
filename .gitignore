@@ -1,0 +1,11 @@
+.DS_Store
+.idea
+
+composer.phar
+composer.lock
+vendor
+.phpcs-cache
+
+clover.xml
+coveralls-upload.json
+phpunit.xml
