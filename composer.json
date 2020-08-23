@@ -20,8 +20,8 @@
   "require-dev": {
     "phpunit/phpunit": "^7.0",
     "phpstan/phpstan": "^0.12.0",
-    "chiron/chiron": "^3.7",
-    "chiron/router-fastroute": "^0.9",
+    "chiron/chiron": "^3.9",
+    "chiron/fastroute-bridge": "^1.0",
     "chiron/container": "^3.5",
     "chiron/console": "^0.9",
     "chiron/coding-standard": "^3.0"

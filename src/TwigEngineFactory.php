@@ -99,7 +99,7 @@ final class TwigEngineFactory
             }
 
             // TODO : vérifier si le assert sur le type de l'interface est encore nécessaire car si on fait la vérif dans la classe de config cela sera suffisant !!!!
-            $this->assertExtension($extensionName);
+            $this->assertExtension($extension);
             $this->twig->addExtension($extension);
         }
     }
