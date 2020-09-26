@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace Chiron\Twig\Tests\Helper;
 
-use Chiron\Boot\Configure;
-use Chiron\Boot\Directories;
+use Chiron\Core\Configure;
+use Chiron\Core\Directories;
 use Chiron\Container\Container;
 use Chiron\Twig\Config\TwigConfig;
 use Chiron\Twig\Tests\Helper\Fixtures\Html;

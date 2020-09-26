@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace Chiron\Twig\Tests\Command;
 
-use Chiron\Boot\Configure;
-use Chiron\Boot\Directories;
+use Chiron\Core\Configure;
+use Chiron\Core\Directories;
 use Chiron\Console\CommandLoader\CommandLoader;
 use Chiron\Console\Console;
 use Chiron\Container\Container;
