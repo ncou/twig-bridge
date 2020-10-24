@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Chiron\Twig\Extension;
 
-use Chiron\Http\RequestContext;
+use Chiron\Http\Request\RequestContext;
 use Chiron\Routing\UrlGeneratorInterface;
 use Closure;
 use Twig\Extension\AbstractExtension;
@@ -50,7 +50,7 @@ final class RoutingExtension extends AbstractExtension
     // TODO : ajouter la phpDoc qui doit être la même que dans le fichier fastRouteRouter et que dans UrlGenerator
     private function absoluteUrlFor(string $routeName, array $substitutions = [], array $queryParams = []): string
     {
-        $uri = $this->context->request()->getUri();
+        $uri = $this->context->getRequest()->getUri();
 
         return $this->generator->absoluteUrlFor($uri, $routeName, $substitutions, $queryParams);
     }

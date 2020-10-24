@@ -6,7 +6,7 @@ namespace Chiron\Twig\Bootloader;
 
 use Chiron\Bootload\AbstractBootloader;
 use Chiron\Container\FactoryInterface;
-use Chiron\Http\RequestContext;
+use Chiron\Http\Request\RequestContext;
 use Chiron\Router\UrlGeneratorInterface;
 use Chiron\Twig\Extension\ContainerExtension;
 use Chiron\Twig\Extension\RoutingExtension;

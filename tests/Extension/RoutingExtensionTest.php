@@ -7,7 +7,7 @@ namespace Chiron\Twig\Tests\Extension;
 use Chiron\Container\Container;
 use Chiron\Http\Psr\ServerRequest;
 use Chiron\Http\Psr\Uri;
-use Chiron\Http\RequestContext;
+use Chiron\Http\Request\RequestContext;
 use Chiron\FastRoute\UrlGenerator;
 use Chiron\Routing\RouteCollection;
 use Chiron\Routing\Target\TargetFactory;
