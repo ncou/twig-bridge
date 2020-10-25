@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Chiron\Twig\Provider;
 
-use Chiron\Bootload\ServiceProvider\ServiceProviderInterface;
+use Chiron\Core\Container\Provider\ServiceProviderInterface;
 use Chiron\Container\BindingInterface;
 use Chiron\Twig\TwigEngineFactory;
 use Chiron\Twig\TwigRenderer;

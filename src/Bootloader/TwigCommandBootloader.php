@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Chiron\Twig\Bootloader;
 
-use Chiron\Bootload\AbstractBootloader;
+use Chiron\Core\Container\Bootloader\AbstractBootloader;
 use Chiron\Console\Console;
 use Chiron\Twig\Command\TwigClearCommand;
 use Chiron\Twig\Command\TwigCompileCommand;
