@@ -138,7 +138,6 @@ class TwigCompileCommandTest extends TestCase
     private function initContainer(): Container
     {
         $container = new Container();
-        $container->setAsGlobal();
 
         // TODO : il faudra surement initialiser la matuation sur les classes de config plutot que de faire un merge !!!!
         $configure = $container->get(Configure::class);

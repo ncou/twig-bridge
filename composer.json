@@ -24,7 +24,8 @@
     "chiron/fastroute-bridge": "^1.0",
     "chiron/container": "^3.5",
     "chiron/console": "^0.9",
-    "chiron/coding-standard": "^3.0"
+    "chiron/coding-standard": "^3.0",
+    "nyholm/psr7": "^1.1"
   },
   "scripts": {
     "phpunit": "phpunit --colors=always",

@@ -5,9 +5,9 @@ declare(strict_types=1);
 namespace Chiron\Twig\Tests\Extension;
 
 use Chiron\Container\Container;
-use Chiron\Http\Psr\ServerRequest;
-use Chiron\Http\Psr\Uri;
-use Chiron\Http\Request\RequestContext;
+use Nyholm\Psr7\ServerRequest;
+use Nyholm\Psr7\Uri;
+use Chiron\RequestContext\RequestContext;
 use Chiron\FastRoute\UrlGenerator;
 use Chiron\Routing\RouteCollection;
 use Chiron\Routing\Target\TargetFactory;
@@ -31,9 +31,7 @@ class RoutingExtensionTest extends TestCase
         $this->twigEnvironment = new Environment(new FilesystemLoader());
 
         $container = new Container();
-
-        $targetFactory = new TargetFactory($container);
-        $routes = new RouteCollection($targetFactory);
+        $routes = new RouteCollection($container);
         $routes->addRoute(Route::any('/my/target/path/')->name('route_name'));
         $routes->addRoute(Route::any('/hello/{name}')->name('route_name_advanced'));
 

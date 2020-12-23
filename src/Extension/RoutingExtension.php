@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Chiron\Twig\Extension;
 
-use Chiron\Http\Request\RequestContext;
+use Chiron\RequestContext\RequestContext;
 use Chiron\Routing\UrlGeneratorInterface;
 use Closure;
 use Twig\Extension\AbstractExtension;
