@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Chiron\Twig\Command;
 
-use Chiron\Console\AbstractCommand;
+use Chiron\Core\Command\AbstractCommand;
 use Twig\Environment;
 
 /**

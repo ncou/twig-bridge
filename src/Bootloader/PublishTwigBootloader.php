@@ -6,13 +6,13 @@ namespace Chiron\Twig\Bootloader;
 
 use Chiron\Core\Directories;
 use Chiron\Core\Container\Bootloader\AbstractBootloader;
-use Chiron\PublishableCollection;
+use Chiron\Publisher\Publisher;
 
 final class PublishTwigBootloader extends AbstractBootloader
 {
-    public function boot(PublishableCollection $publishable, Directories $directories): void
+    public function boot(Publisher $publisher, Directories $directories): void
     {
         // copy the configuration file template from the package "config" folder to the user "config" folder.
-        $publishable->add(__DIR__ . '/../../config/twig.php.dist', $directories->get('@config/twig.php'));
+        $publisher->add(__DIR__ . '/../../config/twig.php.dist', $directories->get('@config/twig.php'));
     }
 }
