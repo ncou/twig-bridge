@@ -9,7 +9,7 @@ use Nyholm\Psr7\ServerRequest;
 use Nyholm\Psr7\Uri;
 use Chiron\RequestContext\RequestContext;
 use Chiron\FastRoute\UrlGenerator;
-use Chiron\Routing\RouteCollection;
+use Chiron\Routing\Map;
 use Chiron\Routing\Target\TargetFactory;
 use Chiron\Routing\Route;
 use Chiron\Twig\Extension\RoutingExtension;
@@ -31,11 +31,13 @@ class RoutingExtensionTest extends TestCase
         $this->twigEnvironment = new Environment(new FilesystemLoader());
 
         $container = new Container();
-        $routes = new RouteCollection($container);
-        $routes->addRoute(Route::any('/my/target/path/')->name('route_name'));
-        $routes->addRoute(Route::any('/hello/{name}')->name('route_name_advanced'));
+        $map = new Map();
+        $map->setContainer($container);
 
-        $urlGenerator = new UrlGenerator($routes);
+        $map->addRoute(Route::any('/my/target/path/')->name('route_name'));
+        $map->addRoute(Route::any('/hello/{name}')->name('route_name_advanced'));
+
+        $urlGenerator = new UrlGenerator($map);
 
         $request = new ServerRequest('GET', new Uri('https://www.foo.bar/'));
         $container->bind(ServerRequestInterface::class, $request);
