@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Chiron\Twig;
 
-use Chiron\Container\FactoryInterface;
+use Chiron\Injector\FactoryInterface;
 use Chiron\Twig\Config\TwigConfig;
 use Chiron\Twig\Helper\CallStaticClassProxy;
 use InvalidArgumentException;

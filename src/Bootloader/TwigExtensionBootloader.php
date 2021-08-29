@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Chiron\Twig\Bootloader;
 
 use Chiron\Core\Container\Bootloader\AbstractBootloader;
-use Chiron\Container\FactoryInterface;
+use Chiron\Injector\FactoryInterface;
 use Chiron\RequestContext\RequestContext;
 use Chiron\Router\UrlGeneratorInterface;
 use Chiron\Twig\Extension\ContainerExtension;
