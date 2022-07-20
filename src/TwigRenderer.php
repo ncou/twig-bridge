@@ -11,11 +11,13 @@ use Chiron\Views\TemplateRendererInterface;
 use Twig\Environment;
 use Twig\Loader\FilesystemLoader;
 
+// TODO : à corriger en utilisant un ViewManger notamment !!!!
+
 // TODO : créer une classe abstraite pour les renderer plutot que d'utiliser des trait ????
-final class TwigRenderer implements TemplateRendererInterface
+final class TwigRenderer //implements TemplateRendererInterface
 {
-    use AttributesTrait;
-    use ExtensionTrait;
+    //use AttributesTrait;
+    //use ExtensionTrait;
 
     private $extension = 'html.twig';
 

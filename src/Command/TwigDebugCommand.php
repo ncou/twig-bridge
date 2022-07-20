@@ -30,6 +30,7 @@ final class TwigDebugCommand extends AbstractCommand
         $this->setDescription('Shows a list of twig functions, filters, globals, tests and the registered paths.');
     }
 
+    // TODO : virer le paramétre Filesystem $filesystem qui ne sert à rien !!!!
     public function perform(Filesystem $filesystem, TemplateRendererInterface $renderer): int
     {
         $this->twig = $renderer->twig();
